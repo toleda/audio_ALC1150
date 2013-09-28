@@ -41,11 +41,12 @@ https://github.com/toleda/audio_ssdt_enabler
 3b. Audio_ID = 2/audio_ssdt-hdae-2.zip
 3c. Audio_ID = 3, see ssdt/HD3K/HD4K HDMI audio
 3d. Audio_ID = 12/audio_ssdt-hdae-12.zip 
-4. Clover/Config.plist/PCI/HDAInjection, see ML-Clover Realtek ALC AppleHDA Injection.pdf
+4. Clover/Config.plist/PCI/Devices, see ML-Clover Realtek ALC AppleHDA Injection.pdf
 https://github.com/toleda/audio_ALCInjection
-4a. Audio_ID = 1/HDAInjection=1
-4b. Audio_ID = 2/HDAInjection=2
-4c. Audio_ID = 3/HDAInjection=3 
+4a. Audio_ID = 1/Audio/Inject=1
+4b. Audio_ID = 2/Audio/Inject=2
+4c. Audio_ID = 3/Audio/Inject=3
+4d. Audio_ID = 12/Audio/Inject=1 
 
 Download
 1. https://github.com/toleda/audio_ALC1150
