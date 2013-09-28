@@ -27,7 +27,7 @@ http://www.insanelymac.com/forum/topic/290796-realtek-alc-applehda-audio-injecti
 https://github.com/toleda/audio_kext_enabler
 1a. Audio_ID = 1/HDAEnabler1.kext.zip 
 1b. Audio_ID = 2/HDAEnabler2.kext.zip
-1c. Audio_ID = 3, see ssdt/HD3K/HD4K HDMI audio
+1c. Audio_ID = 3, NA
 1d. Audio_ID = 12/HDAEnabler12.kext.zip
 2. dsdt/HDEF/layout-id = Audio_ID, see {Guide} Add or Edit dsdt/HDEF.pdf
 https://github.com/toleda/audio_ALCInjection
@@ -45,7 +45,7 @@ https://github.com/toleda/audio_ssdt_enabler
 https://github.com/toleda/audio_ALCInjection
 4a. Audio_ID = 1/Audio/Inject=1
 4b. Audio_ID = 2/Audio/Inject=2
-4c. Audio_ID = 3/Audio/Inject=3
+4c. Audio_ID = 3, NA
 4d. Audio_ID = 12/Audio/Inject=1 
 
 Download
