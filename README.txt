@@ -18,7 +18,7 @@ ML-Customizing the Realtek AppleHDA.pdf
 Two Realtek ALC1150 AppleHDA.kext Audio_IDs, select one
 Audio_ID: 1 supports HD4600/AMD/Nvidia HDMI and 3, 5 and 6 port Realtek ALC onboard audio  
 Audio_ID: 2 supports HD4600/AMD/Nvidia HDMI and 3 port Realtek ALC onboard audio
-Audio_IDs: 1 and 2 support analog 5.1 surround sound, 3 does not
+Audio_IDs: 1 and 2 support analog 5.1 surround sound
 Audio_IDs: 1 and 2 require HDMI audio dsdt edits for HDMI audio 
 
 Four techniques enable the Realtek ALC AppleHDA.kext, select one
