@@ -27,26 +27,18 @@ http://www.insanelymac.com/forum/topic/290796-realtek-alc-applehda-audio-injecti
 https://github.com/toleda/audio_kext_enabler
 1a. Audio_ID = 1/HDAEnabler1.kext.zip 
 1b. Audio_ID = 2/HDAEnabler2.kext.zip
-1c. Audio_ID = 3, NA
-1d. Audio_ID = 12/HDAEnabler12.kext.zip
 2. dsdt/HDEF/layout-id = Audio_ID, see {Guide} Add or Edit dsdt/HDEF.pdf
 https://github.com/toleda/audio_ALCInjection
 2a. Audio_ID = 1/layout-id: 0x01, 0x00, 0x00, 0x00, 0x00
 2b. Audio_ID = 2/layout-id: 0x02, 0x00, 0x00, 0x00, 0x00
-2c. Audio_ID = 3, see dsdt/HD3K/HD4K HDMI audio
-2d. Audio_ID = 12/layout-id: 0x0c, 0x00, 0x00, 0x00, 0x00
 3. ssdt/HDEF/layout-id = Audio_ID, see {Guide} Add ssdt/HDEF.pdf
 https://github.com/toleda/audio_ssdt_enabler
 3a. Audio_ID = 1/audio_ssdt-hdae-1.zip
 3b. Audio_ID = 2/audio_ssdt-hdae-2.zip
-3c. Audio_ID = 3, see ssdt/HD3K/HD4K HDMI audio
-3d. Audio_ID = 12/audio_ssdt-hdae-12.zip 
 4. Clover/Config.plist/PCI/Devices, see ML-Clover Realtek ALC AppleHDA Injection.pdf
 https://github.com/toleda/audio_ALCInjection
 4a. Audio_ID = 1/Audio/Inject=1
 4b. Audio_ID = 2/Audio/Inject=2
-4c. Audio_ID = 3, NA
-4d. Audio_ID = 12/Audio/Inject=1 
 
 Download
 1. https://github.com/toleda/audio_ALC1150
