@@ -24,17 +24,25 @@ Audio_IDs: 1 and 2 require HDMI audio dsdt edits for HDMI audio
 Four techniques enable the Realtek ALC AppleHDA.kext, select one
 http://www.insanelymac.com/forum/topic/290796-realtek-alc-applehda-audio-injection/
 1. No dsdt/audio enabler = Audio_ID, install either kext (use 1a or 1b, not both)
-1a. Audio_ID = 1/HDAEnabler1.kext https://github.com/toleda/audio_HDAEnabler1
-1b. Audio_ID = 2/HDAEnabler2.kext https://github.com/toleda/audio_HDAEnabler2
+https://github.com/toleda/audio_kext_enabler
+1a. Audio_ID = 1/HDAEnabler1.kext.zip 
+1b. Audio_ID = 2/HDAEnabler2.kext.zip
+1c. Audio_ID = 3, see ssdt/HD3K/HD4K HDMI audio
+1d. Audio_ID = 12/HDAEnabler12.kext.zip
 2. dsdt/HDEF/layout-id = Audio_ID, see {Guide} Add or Edit dsdt/HDEF.pdf
+https://github.com/toleda/audio_ALCInjection
 2a. Audio_ID = 1/layout-id: 0x01, 0x00, 0x00, 0x00, 0x00
 2b. Audio_ID = 2/layout-id: 0x02, 0x00, 0x00, 0x00, 0x00
 2c. Audio_ID = 3, see dsdt/HD3K/HD4K HDMI audio
+2d. Audio_ID = 12/layout-id: 0x0c, 0x00, 0x00, 0x00, 0x00
 3. ssdt/HDEF/layout-id = Audio_ID, see {Guide} Add ssdt/HDEF.pdf
-3a. Audio_ID = 1/layout-id: 0x01, 0x00, 0x00, 0x00, 0x00
-3b. Audio_ID = 2/layout-id: 0x02, 0x00, 0x00, 0x00, 0x00
+https://github.com/toleda/audio_ssdt_enabler
+3a. Audio_ID = 1/audio_ssdt-hdae-1.zip
+3b. Audio_ID = 2/audio_ssdt-hdae-2.zip
 3c. Audio_ID = 3, see ssdt/HD3K/HD4K HDMI audio
+3d. Audio_ID = 12/audio_ssdt-hdae-12.zip 
 4. Clover/Config.plist/PCI/HDAInjection, see ML-Clover Realtek ALC AppleHDA Injection.pdf
+https://github.com/toleda/audio_ALCInjection
 4a. Audio_ID = 1/HDAInjection=1
 4b. Audio_ID = 2/HDAInjection=2
 4c. Audio_ID = 3/HDAInjection=3 
