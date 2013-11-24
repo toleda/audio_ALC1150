@@ -25,7 +25,6 @@ Audio_IDs: 1 and 2 support analog 5.1 surround sound
 Audio_IDs: 1 and 2 require HDMI audio dsdt edits for HDMI audio 
 
 Four techniques enable the Realtek ALC AppleHDA.kext, select one
-http://www.insanelymac.com/forum/topic/290796-realtek-alc-applehda-audio-injection/
 1. No dsdt/audio enabler = Audio_ID, install either kext (use 1a or 1b, not both)
 1a. Audio_ID = 1/HDAEnabler1.kext.zip 
 1b. Audio_ID = 2/HDAEnabler2.kext.zip
