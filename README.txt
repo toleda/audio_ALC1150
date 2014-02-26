@@ -9,9 +9,10 @@ ____________________________________________________________Download ZIP >  >
 Requirements
 1. Native S/L/E/AppleHDA.kext (restore native AppleHDA.kext with Combo Update)
 2. Supported OS X versions:
-2a. alc1150-91 - Mavericks 10.9.1/AppleHDA.kext_v2.5.3
-2b. alc1150-90 - Mavericks 10.9/AppleHDA.kext_v2.5.2
-2c. alc1150-85 - Mountain Lion 10.8.5/AppleHDA.kext_v2.4.7
+2a. alc1150-91 - Mavericks 10.9.2/AppleHDA.kext_v2.6.0
+2b. alc1150-91 - Mavericks 10.9.1/AppleHDA.kext_v2.5.3
+2c. alc1150-90 - Mavericks 10.9/AppleHDA.kext_v2.5.2
+2d. alc1150-85 - Mountain Lion 10.8.5/AppleHDA.kext_v2.4.7
 
 Realtek ALC AppleHDA Guides https://github.com/toleda/audio_ALCInjection
 M-Realtek ALC AppleHDA Capabilities.pdf
@@ -45,9 +46,10 @@ Download
 
 Installation/Shell Script/.command
 1. Downloads/audio_ALC1150-master/
-1a. for 10.9.1/audio_alc1150-91_patch.command
-1b. for 10.9/audio_alc1150-90_patch.command
-1c. for 10.8.5 and newer/audio_alc1150-85_patch.command
+1a. for 10.9.2/audio_alc1150-91_patch.command
+1b. for 10.9.1/audio_alc1150-91_patch.command
+1c. for 10.9/audio_alc1150-90_patch.command
+1d. for 10.8.5 and newer/audio_alc1150-85_patch.command
 2. Launch (double click: audio_alc1150-ver_patch.command)
 3. Enter password at prompt
 4. Save Log: Terminal/Shell/Export Text As../Terminal Saved Output/Desktop/audio_ALC1150
@@ -71,10 +73,11 @@ THe KiNG
 VHC888
 .:ErmaC:.
 bcc9
-RevoGirl
+RevoGirl rip
 
 toleda
 https://github.com/toleda/audio_ALC1150
+audio_alc1150-92_patch.command
 audio_alc1150-91_patch.command
 audio_alc1150-90_patch.command
 audio_alc1150-85_patch.command
