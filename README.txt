@@ -6,27 +6,31 @@ OS X Realtek ALC1150 Onboard Audio
 This guide enables OS X Realtek ALC1150 onboard audio on Intel based motherboards with a bootable clean install of OS X. The Realtek AppleHDA.kext only works with the codec the kext was edited for and patches the native AppleHDA.kext.
 ____________________________________________________________Download ZIP >  > 
 
+Note: cloverALC, see https://github.com/toleda/audio_cloverALC
+
 Requirements
 1. Native S/L/E/AppleHDA.kext (restore native AppleHDA.kext with Combo Update)
 2. Supported OS X versions:
-2a. alc1150-91 - Mavericks 10.9.2/AppleHDA.kext_v2.6.0
+2a. alc1150-92 - Mavericks 10.9.2/AppleHDA.kext_v2.6.0
 2b. alc1150-91 - Mavericks 10.9.1/AppleHDA.kext_v2.5.3
 2c. alc1150-90 - Mavericks 10.9/AppleHDA.kext_v2.5.2
 2d. alc1150-85 - Mountain Lion 10.8.5/AppleHDA.kext_v2.4.7
 
 Realtek ALC AppleHDA Guides https://github.com/toleda/audio_ALCInjection
-M-Realtek ALC AppleHDA Capabilities.pdf
-M-Realtek ALC AppleHDA Customization.pdf
-M-Realtek ALC AppleHDA No Audio.pdf
-M-Realtek ALC AppleHDA Screenshots.pdf
+1. M-Realtek ALC AppleHDA Capabilities.pdf
+2. M-Realtek ALC AppleHDA Customization.pdf
+3. M-Realtek ALC AppleHDA No Audio.pdf
+4. M-Realtek ALC AppleHDA Screenshots.pdf
 
-Three Realtek ALC1150 AppleHDA.kext Audio_IDs, select one
-Audio_ID: 1 supports 5 and 6 port ALC8xx onboard and/or AMD/Nvidia HDMI audio  
-Audio_ID: 2 supports 3 port ALC8xx onboard and/or AMD/Nvidia HDMI audio
-Audio_IDs: 1 and 2 support analog 5.1 surround sound
-Audio_IDs: 1 and 2 require HDMI audio dsdt edits for HDMI audio 
+Three Realtek ALC898 AppleHDA.kext Audio_IDs, select one
+1. Audio_ID: 1 supports 5 and 6 port ALC8xx onboard and/or AMD/Nvidia HDMI audio  
+2, Audio_ID: 2 supports 3 port ALC8xx onboard and/or AMD/Nvidia HDMI audio
+3. Audio_ID: 3 supports 3, 5 and 6 port ALC8xx onboard HD4K/HD3K HDMI audio
+	with or without AMD/Nvidia HDMI audio
+4. Audio_IDs: 1 and 2 support analog 5.1 surround sound, 3 does not
+5. Audio_IDs: 1, 2 and 3 require HDMI audio dsdt edits for HDMI audio  
 
-Four techniques enable the Realtek ALC AppleHDA.kext, select one
+Techniques to enable the Realtek ALC AppleHDA.kext, select one
 1. No dsdt/audio enabler = Audio_ID, install either kext (use 1a or 1b, not both)
 1a. Audio_ID = 1/HDAEnabler1.kext.zip 
 1b. Audio_ID = 2/HDAEnabler2.kext.zip
@@ -39,14 +43,17 @@ Four techniques enable the Realtek ALC AppleHDA.kext, select one
 4. Clover/Config.plist/Devices, see ML-Clover Realtek ALC AppleHDA Injection.pdf
 4a. Audio_ID = 1/Audio/Inject=1
 4b. Audio_ID = 2/Audio/Inject=2
+5. Chameleon/Chameleon Installer/Customize/Settings
+5a. Audio_ID = 1/HDEF Layout=1
+5b. Audio_ID = 2/HDEF Layout=2
 
 Download
 1. https://github.com/toleda/audio_ALC1150
 2. Select: Download ZIP (above and right)
 
-Installation/Shell Script/.command
+Installation/Shell Script/.command (Do not move folder or files)
 1. Downloads/audio_ALC1150-master/
-1a. for 10.9.2/audio_alc1150-91_patch.command
+1a. for 10.9.2/audio_alc1150-92_patch.command
 1b. for 10.9.1/audio_alc1150-91_patch.command
 1c. for 10.9/audio_alc1150-90_patch.command
 1d. for 10.8.5 and newer/audio_alc1150-85_patch.command
@@ -103,14 +110,7 @@ Details - audio_ALC1150-ver_patch script  (see Requirements)
 _____________________________
 
 ...$ .../Downloads/audio_ALC1150-master/audio_alc1150-90_patch.command ; exit;
-Prepare Desktop/audio_ALC1150 ...
-Archive:  1150.zip
-   creating: 1150/
-  inflating: 1150/Info-85.plis       
-  inflating: 1150/Info-90.plist     
- extracting: 1150/layout1.xml.zlib    
- extracting: 1150/layout2.xml.zlib     
-  inflating: 1150/Platforms.xml.zlib  
+Prepare Desktop/audio_ALC1150 ... 
 Install files ...
 Password:
 Patch binary ...

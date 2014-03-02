@@ -10,7 +10,7 @@
 # 2. Rename Desktop/audio_ALC1150 to audio_ALC1150-archive (if present)
 # 3. Verify Downloads/audio_ALC1150-master present
 #
-# Installation
+# Installation (Do not move folder or files)
 # 1. Downloads/audio_ALC1150-master/audio_alc1150-92_patch.command
 # 2. Double click audio_alc1150-92_patch.command
 # 3. Enter password at prompt
@@ -25,10 +25,11 @@ echo " "
 #
 echo "Prepare Desktop/audio_ALC1150 ..."
 cd ~
+rm -rf Desktop/audio_ALC1150
 cp -R Downloads/audio_ALC1150-master Desktop/audio_ALC1150
 cp -R /System/Library/Extensions/AppleHDA.kext Desktop/audio_ALC1150/AppleHDA-orig.kext
 cd Desktop/audio_ALC1150
-unzip 1150.zip
+unzip -q 1150.zip
 cd 1150
 
 echo "Install files ..."
